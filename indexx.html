@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya GymS</title>
+</head>
+<style>
+    * {
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .header {
+        position: sticky;
+        top: 1px;
+        background-color: rgb(65, 62, 62);
+
+    }
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        background-size: 1255px;
+        height: 16000px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid rgb(164, 61, 61); */
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        color: white;
+        font-size: smaller;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .left img {
+        width: 40px;
+        filter: invert(100%);
+        /* to convert black image to white */
+    }
+
+    .mid {
+        font-size: 22px;
+        display: block;
+        width: 43%;
+        margin: 13px auto;
+        /* border: 2px solid rgb(192, 240, 17); */
+    }
+
+    .right {
+        position: absolute;
+        right: 14px;
+        top: 29px;
+        display: inline-block;
+        /* border: 2px solid rgb(230, 23, 206); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 17 px;
+        color: rgb(84, 146, 201);
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0px 8px;
+    }
+
+    .navbar li a:hover {
+        color: rgb(234, 214, 214);
+        letter-spacing: 5px;
+        font-weight: 600;
+
+    }
+
+    .navbar li a.active {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 8px;
+        background-color: black;
+        color: aliceblue;
+        padding: 2px 2px;
+        border: 2px solid #f3e5f5;
+        border-radius: 4px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(166, 190, 182);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: auto;
+        background-color: rgb(234, 205, 177);
+        width: 41%;
+        border-radius: 23px;
+        font-size: small;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: rgb(21, 27, 2);
+    }
+
+    p {
+        margin-left: 30px;
+        color: white;
+        display: inline-block;
+        font-size: 24px;
+        font-family: cursive;
+
+    }
+
+    .image img {
+        filter: invert(100%);
+        display: inline-block;
+        margin-left: 40%;
+        height: 200px;
+        width: 190px;
+        transition: all 1s ease-in-out 0.2s;
+    }
+
+    .image img:hover {
+        transform: translateX(100px);
+    }
+
+    .image1 {
+        margin-top: 15px;
+        transition: all 1s ease-in-out 0.2s;
+    }
+
+    .image1:hover {
+        transform: scale(1.2);
+    }
+
+    .top {
+        margin: auto;
+        border: 2px solid red;
+        width: 840px;
+    }
+
+    img {
+        width: 155px;
+        display: block;
+        margin: auto;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0px;
+    }
+
+    .box {
+        border: 4px solid #220f10;
+        background-color: #e700ff24;
+        margin: 12px;
+        padding: 8px;
+        display: inline-block;
+        width: 253px;
+        box-sizing: border-box;
+    }
+
+    .container1 {
+        margin: auto;
+        width: 840px;
+    }
+
+    .anime1 {
+        animation: satya 3s ease-in 1s infinite;
+    }
+
+    @keyframes satya {
+        0% {
+            zoom: 50%;
+
+        }
+
+        50% {
+            zoom: 75%;
+            color: red;
+        }
+
+        100% {
+            zoom: 110%;
+            color: aqua;
+
+        }
+    }
+
+    .anime2 {
+        animation: satya1 3s ease-in 1s infinite;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    @keyframes satya1 {
+        0% {
+            zoom: 50%;
+
+        }
+
+        50% {
+            zoom: 75%;
+            color: red;
+        }
+
+        100% {
+            zoom: 110%;
+            color: aqua;
+
+        }
+    }
+
+    footer {
+        
+        margin: 20px;
+        border: 2px solid white;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    footer a {
+       padding: 30px;
+
+    }
+
+     .fa-brands:hover {
+       zoom: 150%;
+    }
+</style>
+<script src="https://kit.fontawesome.com/6ded350502.js" crossorigin="anonymous"></script>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/02/70/capture-business-logo-vector-19230270.jpg" alt="">
+            <div>
+                Satya's site
+            </div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="indexx.html" class="active">Home</a></li>
+                <li><a href="cv.html">Resume</a> </li>
+                <li><a href="blog.html">My Blog</a></li>
+                <li><a href="projects.html">My Project</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="anime1">Welcome to Satya's World...</h1>
+    </div>
+
+    <p>This is my personal website, i have Basically developed this website for the practice purpose.
+    </p>
+
+    <div class="image">
+        <img src="https://thumbs.dreamstime.com/b/welcom-to-my-world-welcome-to-my-world-quote-185448218.jpg" alt="">
+    </div>
+
+    <div class="top">
+
+        <img src="Picsart_22-10-26_19-46-01-830.png" alt="" class="image1">
+        <h3>Welcome to my site.</h3>
+
+        <div class="container1">
+            <div class="box">
+                <h4 class="heading">be the developer</h4>
+                <p>you can also develope this type of website</p>
+            </div>
+            <div class="box">
+                <h4 class="heading">My site</h4>
+                <p>you are on my website</p>
+            </div>
+            <div class="box">
+                <h4 class="heading">Join us</h4>
+                <p>
+                    click here to join us <a href="subscribe.html" class="anime2">SUBSCRIBE.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <footer>
+
+        <a href="https://www.snapchat.com/add/mr_satya_0508?share_id=XLVBfTd-hll&locale=en-GB" target="_blank">
+            <i class="fa-brands fa-snapchat"></i>
+        </a>
+        <a href="https://instagram.com/mr_satya_05_?igshid=YmMyMTA2M2Y=" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/satyam.prajapati.104/" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+        <a href="" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+    </footer>
+</body>
+
+</html>

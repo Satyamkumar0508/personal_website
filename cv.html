@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Area</title>
+    <style>
+     
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+           'navbar navbar navbar navbar'
+           'section section section aside'
+           'footer footer footer footer';
+        }
+        .box {
+            border: 2px solid rgb(226, 76, 76);
+            background-color: rgb(174, 162, 144);
+            padding: 10px;
+        }
+        #navbar{
+            /* grid-area: ka nam navbar diye yaha */
+            grid-area: navbar;
+            position: sticky;
+            top: 3px;
+            
+        }
+       
+        #section{
+            grid-area: section;
+            background-color: rgb(211, 173, 173);
+        }
+        #aside{
+            background-color: rgb(148, 157, 176);
+            grid-area: aside;
+        }
+        #footer{
+            background-color: rgb(245, 232, 202);
+            text-align: center;
+            font-size: 19px;
+            grid-area: footer;
+        }
+        .header{
+        position: sticky;
+        top: 1px;
+        background-color: rgb(65, 62, 62);
+        
+    }
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        background-size: 1255px;
+        height: 16000px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid rgb(164, 61, 61); */
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        color: white;
+        font-size: smaller;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .left img {
+        width: 40px;
+        filter: invert(100%);
+        /* to convert black image to white */
+    }
+
+    .mid {
+        font-size: 22px;
+        display: block;
+        width: 43%;
+        margin: 13px auto;
+        /* border: 2px solid rgb(192, 240, 17); */
+    }
+    .right {
+        position: absolute;
+        right: 14px;
+        top: 29px;
+        display: inline-block;
+        /* border: 2px solid rgb(230, 23, 206); */
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .navbar li {
+        font-size: 17 px;
+        color: rgb(84, 146, 201);
+        display: inline-block;
+    }
+    .navbar li a {
+        color: aliceblue;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0px 8px;
+    }
+    .navbar li a:hover{
+        color: grey;
+    }
+    .navbar li a.active {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 8px;
+        background-color: black;
+        color: aliceblue;
+        padding: 2px 2px;
+        border: 2px solid #f3e5f5;
+        border-radius: 4px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(166, 190, 182);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            <header class="header">
+                <!-- left box for logo -->
+                <div class="left">
+                    <img src="https://cdn1.vectorstock.com/i/1000x1000/02/70/capture-business-logo-vector-19230270.jpg" alt="">
+                    <div>
+                        Satya's site
+                    </div>
+                </div>
+                <!-- mid box for nav bar -->
+                <div class="mid">
+                    <ul class="navbar">
+                        <li><a href="indexx.html" >Home</a></li>
+                        <li><a href="cv.html" class="active" >Resume</a> </li>
+                        <li><a href="blog.html">My Blog</a></li>
+                        <li><a href="projects.html">My Project</a></li>
+                    </ul>
+        
+                </div>
+                <!-- right box for buttons -->
+                <div class="right">
+                    <button class="btn">Call Us </button>
+                    <button class="btn">Email Us</button>
+                </div>
+            </header>
+            </div>
+        <div id="section" class="box">
+            <ul type="disc">
+                <li>
+                    My name is Satyam Kumar. 
+                </li>
+                <li>
+                    I am from bihar.
+                </li>
+                <li>
+                    I have passed class 10<sup>th</sup> from L.I.S,Dehradun, in 2019.
+                </li>
+                <li>
+                    I have passed class 12<sup> th</sup> from K.R.M high school, Patna.,in 2021.
+                </li> 
+                <li>
+                    Currenty, I am persueing my Graduation Degree from (S.O.A University) 
+                </li>
+                
+            </ul>
+
+        </div>
+        <div id="aside" class="box">
+            <h3> My Technical Skills are:-</h3>
+
+        <ul type="square">
+
+            <li> I am very well familiar with JAVA Language.</li> 
+            <li> I am very well familiar with HTML and CSS</li>
+
+            
+            <li> I have done intership with Skill Vertex</li>
+
+        </ul>
+
+        </div>
+        <footer id="footer"class="box">
+           <p> Developed By "SATYA"</p>
+        </footer>
+      
+</body>
+
+</html>

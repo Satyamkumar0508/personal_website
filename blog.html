@@ -1,0 +1,292 @@
+<html>
+
+<head>
+
+    <title>Document</title>
+
+    <style>
+        .header {
+            position: sticky;
+            top: 1px;
+            background-color: rgb(31, 1, 1);
+
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(39 29 40 / 84%);
+            background-size: 1255px;
+            height: 16000px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid rgb(164, 61, 61); */
+            position: absolute;
+            left: 14px;
+            top: 14px;
+            color: white;
+            font-size: smaller;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .left img {
+            width: 40px;
+            filter: invert(100%);
+            /* to convert black image to white */
+        }
+
+        .mid {
+            font-size: 22px;
+            display: block;
+            width: 43%;
+            margin: 13px auto;
+            /* border: 2px solid rgb(192, 240, 17); */
+        }
+
+        .right {
+            position: absolute;
+            right: 14px;
+            top: 29px;
+            display: inline-block;
+            /* border: 2px solid rgb(230, 23, 206); */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            font-size: 17 px;
+            color: rgb(84, 146, 201);
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            display: inline-block;
+            text-decoration: none;
+            padding: 0px 8px;
+        }
+
+        .navbar li a:hover{
+        color: grey;
+    }
+        .navbar li a.active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 8px;
+            background-color: black;
+            color: aliceblue;
+            padding: 2px 2px;
+            border: 2px solid #f3e5f5;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(166, 190, 182);
+        }
+
+        h1 {
+            color: rgb(252, 175, 175);
+            text-align: center;
+            font-family: cursive;
+            transition: all 1s ease-in-out 0.2s;
+            animation: satya1 3s ease-in 1s infinite;
+        }
+
+        h1:hover {
+            transform: rotate(360deg);
+        }
+
+        @keyframes satya1 {
+            0% {
+                color: aliceblue;
+
+            }
+
+            50% {
+
+                color: red;
+            }
+
+            100% {
+
+                color: aqua;
+
+            }
+        }
+
+        .p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 43px;
+            text-align: center;
+            color: rgb(156, 194, 31);
+            text-decoration: underline;
+            text-shadow: 2px 2px black;
+        }
+
+        .anime1 {
+            border: 2px solid red;
+          background-image: url("https://www.planetware.com/photos-large/IND/india-top-attractions-varanasi.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+        }
+
+        .grid-container {
+           display: inline-block;
+           text-align: center;
+           width: 800px;
+           margin-left: 20%;
+
+        }
+
+        #jaipur {
+            margin:10px ;
+            background-color: pink;
+            border: 2px solid rebeccapurple;
+            transition: all 1s ease-in-out 0.2s;
+        }
+        #jaipur:hover{
+             transform: scale(1.4);
+        }
+
+        #nainital {
+            margin:10px ;
+          background-color: rgb(143, 143, 229);
+            border: 2px solid rgb(180, 210, 35);
+            transition: all 1s ease-in-out 0.2s;
+
+        }
+
+        #nainital:hover{
+             transform: scale(1.4);
+        }
+
+        #manali {
+            margin:10px ;
+            background-color: aliceblue;
+            border: 2px solid rebeccapurple;
+            transition: all 1s ease-in-out 0.2s;
+
+        }
+        #manali:hover{
+             transform: scale(1.4);
+        }
+
+
+        #j_j {
+            margin:10px ;
+            background-color: rgb(64, 107, 107);
+            border: 2px solid rgb(11, 2, 20);
+            transition: all 1s ease-in-out 0.2s;
+
+        }
+        #j_j:hover{
+             transform: scale(1.4);
+        }
+
+
+        #mahendragiri {
+            margin:10px ;
+background-color: greenyellow;
+            border: 2px solid rgb(203, 200, 205);
+            transition: all 1s ease-in-out 0.2s;
+        }
+        #mahendragiri:hover{
+             transform: scale(1.4);
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/02/70/capture-business-logo-vector-19230270.jpg" alt="">
+            <div>
+                Satya's site
+            </div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="indexx.html" >Home</a></li>
+                <li><a href="cv.html">Resume</a> </li>
+                <li><a href="blog.html" class="active">My Blog</a></li>
+                <li><a href="projects.html">My Project</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <h1>My Blogs</h1>
+
+    <div class="anime1">
+        <div class="p">MY VISITED PLACES</div>
+
+
+        <div class="grid-container">
+
+            <div id="jaipur">
+                <h2>Jaipur</h2>
+                <p id="p1">
+                    The Pink City, Jaipur is home to a large number of marvellous forts, gorgeous palaces and magnificent temples. These historic architectures, along with the vibrant culture of Jaipur, attract tourists from all over the world
+                </p>
+
+
+            </div>
+
+            <div id="nainital">
+                <h2>nainital<h2>
+                        <p id="p2">
+                            Nainital is a beautiful hill station, fenced with pine, oak trees, and old cottages. Along with the beautiful tourist spots, the pleasant climate, and the panoramic views are a sight to die for.
+                        </p>
+                        
+            </div>
+            <div id="manali">
+                <h2>Manali</h2>
+                <p id="p3">
+
+                    A gift of the Himalayas to the world, Manali is a beautiful township nestled in the picturesque Beas River valley. It is a rustic enclave known for its cool climate and snow-capped mountains, offering respite to tourists escaping scorching heat of the plains.
+                </p>
+            </div>
+            <div id="j_j">
+                <h2>Jodhpur and Jaisalmer</h2>
+                <p id="p4">
+
+                    The Blue City of Jodhpur and Golden City of Jaisalmer are famous for many tourist attractions and places such as Sam Sand Dunes,Camel Safari,desert festival,Jain Temple,Vyas Chhatri and Mandir Palace.
+                </p>
+            </div>
+            <div id="mahendragiri">
+                <h2>mahendragiri Hills</h2>
+                <p id="p5">
+                    It is a beautiful hill covered with green dense forest and wildlife. Mahendragiri is the Second highest mountain peak of Odisha. The river Mahendratanaya flows down from this hill is an attraction to the visitor. Mahendragiri mountain is famous for Red sandalwood (Lal Chandan) and medicinal plants in Odisha.
+                </p>
+            </div>
+        </div>
+        
+    <footer>
+        <address>
+            email me:<a>satyamprajapati0508@gmail.com</a>
+        </address>
+    </footer>
+</body>
+
+</html>
